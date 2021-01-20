@@ -1,4 +1,4 @@
-## Pay as you go machine learning inference with AWS Lambda (Docker image)
+# Pay as you go machine learning inference with AWS Lambda (Docker image)
 
 This repo contains resources to help you deploy a Lambda function based on Python Docker Image. 
 The applications illustrate how to perform inference with breast cancer XGBoost ML model.
