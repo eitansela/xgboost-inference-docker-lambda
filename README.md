@@ -86,12 +86,12 @@ In the next steps, you'll create the Lambda function in AWS console, using the c
 
 ### Create Function
 
-1. Browse to the [Lambda console](https://console.aws.amazon.com/lambda)
-2. Choose _Create function_
-3. On the next page, choose _Container image_ 
-4. For Function name, use _xgboost-inference-docker-lambda_
-5. For Container image URI, choose the _Browse images_, and choose the container image you pushed to ECR previously
-6. Choose _Create function_
+1. Browse to the [Lambda console](https://console.aws.amazon.com/lambda).
+2. Choose **_Create function_**.
+3. On the next page, choose **_Container image_**. 
+4. For Function name, use _xgboost-inference-docker-lambda_.
+5. For Container image URI, choose the **_Browse images_**, and choose the container image you pushed to ECR previously.
+6. Choose **_Create function_**.
 
 ![Create Function](./img/create_function.png)
 
@@ -100,10 +100,10 @@ Wait for the function to be created.
 ### Modify Lambda memory and time out
 Since the Lambda will load an XGBoost model and use it for inference you'll need to increase the time out and allocate more memory.
 
-1. On the Basic settings section, choose _Edit_
-2. For Memory (MB), choose 256 MB
-3. For Timeout, choose 30 sec
-4. Choose Save
+1. On the Basic settings section, choose _**Edit**_.
+2. For Memory (MB), choose 256 MB.
+3. For Timeout, choose 30 sec.
+4. Choose _**Save**_.
 
 ![Edit basic settings](./img/edit_basic_settings.png)
 
@@ -112,11 +112,11 @@ Since the Lambda will load an XGBoost model and use it for inference you'll need
 1. In the Lambda console, select Configure test events from the Test events dropdown.
 2. For Event Name, enter InferenceTestEvent.
 3. Copy the event JSON from [here](./test-event/test-event-1.json) and paste in the dialog box.
-4. Choose Create
+4. Choose _**Create**_.
 
 ![Configure test event](./img/configure_test_event.png)
 
-After saving, you see InferenceTestEvent in the Test list. Now choose Test
+After saving, you see InferenceTestEvent in the Test list. Now choose _**Test**_.
 
 You see the Lambda function inference result, log output, and duration:
 
