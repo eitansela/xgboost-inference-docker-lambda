@@ -96,3 +96,13 @@ In the next steps, you'll create the Lambda function in AWS console, using the c
 ![Create Function](./img/create_function.png)
 
 Wait for the function to be created.
+
+### Modify Lambda memory and time out
+Since the Lambda will load an XGBoost model and use it for inference you'll need to increase the time out and allocate more memory.
+
+1. On the Basic settings section, choose _Edit_
+2. For Memory (MB), choose 256 MB
+3. For Timeout, choose 30 sec
+4. Choose Save
+
+![Edit basic settings](./img/edit_basic_settings.png)
