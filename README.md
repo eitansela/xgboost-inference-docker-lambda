@@ -15,7 +15,8 @@ Build your Docker image with the `docker build` command. Enter a name for the im
 ### (Optional) Test your application locally using the [runtime interface emulator](https://docs.aws.amazon.com/lambda/latest/dg/images-test.html)
 From a new terminal window, post an event to the following endpoint using a curl command:
 
-`curl --location --request POST 'http://localhost:9000/2015-03-31/functions/function/invocations' \
+```bash
+curl --location --request POST 'http://localhost:9000/2015-03-31/functions/function/invocations' \
 --header 'Content-Type: application/json' \
 --data-raw '{
   "radius_mean": 13.49,
@@ -48,7 +49,8 @@ From a new terminal window, post an event to the following endpoint using a curl
   "concave points_worst": 0.1282,
   "symmetry_worst": 0.2871,
   "fractal_dimension_worst": 0.06917000000000001
-}'`
+}'
+```
 
 This command invokes the function running in the container image and returns a response.
 
