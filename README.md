@@ -95,3 +95,4 @@ In the next steps, you'll create the Lambda function in AWS console, using the c
 
 ![Create Function](./img/create_function.png)
 
+Wait for the function to be created.
