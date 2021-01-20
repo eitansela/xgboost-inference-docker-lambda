@@ -118,4 +118,6 @@ Since the Lambda will load an XGBoost model and use it for inference you'll need
 
 After saving, you see InferenceTestEvent in the Test list. Now choose Test
 
+You see the Lambda function inference result, log output, and duration:
+
 ![Lambda execution result](./img/execution_result.png)
