@@ -67,10 +67,14 @@ You should get a response as follows: `"{\"result\": \"B\"}"`
 
 ### Authenticate the Docker CLI to your Amazon ECR registry
 
+Replace `<YOUR AWS ACCOUNT ID>` with your AWS account id
+
 `aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <YOUR AWS ACCOUNT ID>.dkr.ecr.us-east-1.amazonaws.com    
 `
 
 ### Tag your image to match your repository name, and deploy the image to Amazon ECR using the docker push command
+
+Replace `<YOUR AWS ACCOUNT ID>` with your AWS account id
 
 `docker tag  xgboost-inference-docker-lambda:latest <YOUR AWS ACCOUNT ID>.dkr.ecr.us-east-1.amazonaws.com/xgboost-inference-docker-lambda:latest`
 
