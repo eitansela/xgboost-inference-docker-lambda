@@ -106,3 +106,16 @@ Since the Lambda will load an XGBoost model and use it for inference you'll need
 4. Choose Save
 
 ![Edit basic settings](./img/edit_basic_settings.png)
+
+## Testing your Lambda function
+
+1. In the Lambda console, select Configure test events from the Test events dropdown.
+2. For Event Name, enter InferenceTestEvent.
+3. Copy the event JSON from [here](./test-event/test-event-1.json) and paste in the dialog box.
+4. Choose Create
+
+![Configure test event](./img/configure_test_event.png)
+
+After saving, you see InferenceTestEvent in the Test list. Now choose Test
+
+![Lambda execution result](./img/execution_result.png)
