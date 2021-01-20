@@ -3,7 +3,7 @@
 This repo contains resources to help you deploy a Lambda function based on Python Container Image. 
 The applications illustrate how to perform inference with breast cancer XGBoost ML model.
 
-## Building and testing the Lambda Function Docker image
+## Building the Lambda Function Docker image, testing locally, and pushing to Amazon ECR registry
 In the next steps you'll build the Docker image, and optionally test it on your machine. 
 Next, you'll tag the Docker image and push it to [Amazon ECR Repository](https://docs.aws.amazon.com/AmazonECR/latest/userguide/Repositories.html).
 
@@ -79,3 +79,19 @@ Replace `<YOUR AWS ACCOUNT ID>` with your AWS account id
 `docker tag  xgboost-inference-docker-lambda:latest <YOUR AWS ACCOUNT ID>.dkr.ecr.us-east-1.amazonaws.com/xgboost-inference-docker-lambda:latest`
 
 `docker push <YOUR AWS ACCOUNT ID>.dkr.ecr.us-east-1.amazonaws.com/xgboost-inference-docker-lambda:latest`
+
+## Creating the Lambda Function in AWS Console
+
+In the next steps, you'll create the Lambda function in AWS console, using the container image built previously. 
+
+### Create Function
+
+1. Browse to the [Lambda console](https://console.aws.amazon.com/lambda)
+2. Choose _Create function_
+3. On the next page, choose _Container image_ 
+4. For Function name, use _xgboost-inference-docker-lambda_
+5. For Container image URI, choose the _Browse images_, and choose the container image you pushed to ECR previously
+6. Choose _Create function_
+
+![Create Function](./img/create_function.png)
+
