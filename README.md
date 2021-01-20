@@ -59,6 +59,8 @@ curl --location --request POST 'http://localhost:9000/2015-03-31/functions/funct
 
 This command invokes the function running in the container image and returns a response.
 
+You should get a response as follows: `"{\"result\": \"B\"}"`
+
 ### Create an Amazon ECR Repository
 
 `aws ecr create-repository --repository-name xgboost-inference-docker-lambda`
