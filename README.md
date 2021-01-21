@@ -1,7 +1,7 @@
 # Pay as you go machine learning inference with AWS Lambda (Docker image)
 
 This repo contains resources to help you deploy a Lambda function based on Python Docker Image. 
-The applications illustrate how to perform inference with breast cancer XGBoost ML model.
+The application illustrates how to perform inference with breast cancer XGBoost ML model.
 
 ## Building the Lambda Function Docker image, testing locally, and pushing to Amazon ECR registry
 In the next steps you'll build the Docker image, and optionally test it on your machine. 
