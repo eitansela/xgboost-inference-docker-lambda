@@ -16,7 +16,7 @@ Build your Docker image with the `docker build` command. Enter a name for the im
 
 Run your container image locally using the docker run command
 
-`docker run -p 9000:8080 xgboost-inference-docker-lambda:latest `
+`docker run -p 9000:8080 xgboost-inference-docker-lambda:latest`
 
 From a new terminal window, post an event to the following endpoint using a curl command:
 
