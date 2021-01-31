@@ -31,7 +31,7 @@ model = xgb.XGBClassifier().fit(X_train, y_train)
 # make prediction
 y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
-print("Accuracy: %.2f%%" % (accuracy * 100.0))
+print("Model Accuracy: %.2f%%" % (accuracy * 100.0))
 
 # save the trained model file
 model_file_name = "bc-xgboost-model"
