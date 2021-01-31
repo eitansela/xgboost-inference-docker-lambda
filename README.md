@@ -91,7 +91,8 @@ In the next steps, you'll create the Lambda function in AWS console, using the c
 3. On the next page, choose **_Container image_**. 
 4. For Function name, use _xgboost-inference-docker-lambda_.
 5. For Container image URI, choose the **_Browse images_**, and choose the container image you pushed to ECR previously.
-6. Choose **_Create function_**.
+6. For Permissions, leave the defaults. Lambda will create an execution role with permissions to upload logs to Amazon CloudWatch Logs.
+7. Choose **_Create function_**.
 
 ![Create Function](./img/create_function.png)
 
